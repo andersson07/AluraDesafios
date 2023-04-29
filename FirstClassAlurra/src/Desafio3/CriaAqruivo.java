@@ -9,6 +9,7 @@ import java.util.List;
 
 public class CriaAqruivo {
        static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+       
     public static void criarArquivo(List<Endereco> meuEndereco) throws IOException {
         FileWriter file = new FileWriter("c:\\javatexto\\endereço.json");
         file.write(gson.toJson(meuEndereco));
